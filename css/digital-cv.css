@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  font-size: 16px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  background-color: rgb(0, 0, 255);
+  gap: 15px;
+  border: 15px solid rgb(0, 0, 255);
+}
+
+.item {
+  background-color: aliceblue;
+  padding: 20px 20px;
+}
+
+.item div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer div i {
+  margin: 0 30px;
+  margin-bottom: 5px;
+}
+
+header {
+  font-weight: bolder;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  color: rgb(0, 0, 255);
+}
+
+footer div {
+  display: flex;
+  /* gap: 30px; */
+}
+
+.goals {
+  grid-column: span 2;
+}
+
+.goals div {
+  border-bottom: 1px dotted rgb(173, 173, 173);
+}
+
+.scopes {
+  grid-column: span 2;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.scopes footer {
+  display: flex;
+  column-gap: 50px;
+}
+
+.timeline {
+  grid-row: span 2;
+}
+
+.timeline article {
+  border-bottom: 1px dotted rgb(0, 0, 255);
+}
+
+i {
+  color: rgb(33, 37, 41);
+  font-size: 30px;
+}
+
+.timeline i {
+  background-color: rgb(158, 136, 255);
+  color: aliceblue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  font-style: normal;
+  border: 1px solid rgb(39, 15, 15);
+}
+
+@media (max-width: 992px) {
+  .main {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .goals {
+    grid-column: 1;
+    order: 1;
+  }
+
+  .scopes {
+    grid-column: 1;
+    order: 2;
+  }
+
+  .team {
+    order: 3;
+  }
+
+  .primary {
+    order: 4;
+  }
+
+  .timeline {
+    order: 5;
+  }
+
+  .timeline div i {
+    margin-left: 0;
+  }
+
+  footer div {
+    flex-direction: column
+  }
+  footer div i {
+    text-align: center;
+  }
+
+  .scopes footer {
+    flex-direction: column
+  }
+
+}

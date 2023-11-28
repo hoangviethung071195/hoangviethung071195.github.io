@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* 
+- Font sizes (rem)
+1rem / 1.2rem / 1.4rem / 1.6rem / 1.8rem / 2.0rem / 2.4rem / 3.0rem / 3.6rem / 4.4rem / 5.2rem / 6.2rem / 7.4rem / 8.6rem / 9.8rem
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+x-large: 2
+
+- Letter spacing
+-0.5px
+0.75px 
+*/
+
+* {
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+bold {
+  color: #444;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#banner {
+  background: url(../images/banner.jpg) no-repeat;
+  background-size: cover;
+  padding: 8% 0 22% 0;
+  text-align: center;
+  position: relative;
+}
+
+#banner h1,
+#banner span {
+  color: #ffffff;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* màu của lớp bóng mờ */
+  z-index: -1;
+  z-index: 1;
+}
+
+#banner h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+#job-info .row:first-child ul li {
+  position: relative;
+}
+
+#job-info .row:first-child ul li::before {
+  content: "\2022";
+  color: #34a7de;
+  font-weight: bold;
+  width: 1.2rem;
+  margin-left: -1em;
+  position: absolute;
+  font-size: 2rem;
+  top: -1rem;
+}
+
+#personal-info ul li {
+  list-style: none;
+}
+
+b {
+  font-weight: 400;
+}
+
+i {
+  color: #34a7de;
+}
+
+.bg-icon {
+  background-color: #34a7de;
+}
+
+summary {
+  list-style: none;
+}
+
+#job-info header i {
+  font-size: 3rem;
+  color: #555;
+}
+
+#job-info li {
+  margin-bottom: 1.6rem;
+}
+
+#job-info .job-4 .job-icons {
+  display: flex;
+  justify-content: space-around;
+}
+#certificate img,
+#project img {
+  width: 100%;
+}
+
+#project i {
+  color: var(--bs-secondary);
+}
+
+#about li bold {
+  font-weight: 600;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+#nav-bar a {
+  color: #555;
+}
+
+#job-info .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#job-info .row > div {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 75%;
+  }
+}

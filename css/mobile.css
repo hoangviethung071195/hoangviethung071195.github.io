@@ -1,0 +1,47 @@
+@media (max-width: 576px) {
+  .container {
+    width: 75%;
+  }
+  #job-info .row {
+    grid-template-columns: 1fr;
+  }
+  #nav-bar .row div:nth-child(3) {
+    display: none;
+  }
+  #nav-bar .row {
+    flex-direction: column;
+    text-align: left;
+  }
+  #nav-bar .row .col {
+    border: none !important;
+  }
+  #certificate .row > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  #certificate .row > div:nth-child(3) {
+    padding-top: 1rem;
+    border-top: 1px solid #dcc99f;
+    border-left: none !important;
+  }
+  #project summary {
+    padding: 0 0.75rem;
+  }
+  #project article {
+    margin-bottom: 4rem;
+  }
+  .job-1 {
+    height: 100%;
+  }
+  .job-3 {
+    margin-top: 0;
+  }
+  .job-4 {
+    height: 100%;
+  }
+  .job-6 {
+    margin-top: 0;
+  }
+}
